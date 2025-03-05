@@ -1,4 +1,30 @@
-/* Background image - Paling belakang & penuh layar */
+.navigasi {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 10;
+  font-size: 1.2em;
+  color: white;
+}
+
+.navigasi ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.navigasi li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navigasi li:hover {
+  color: #3088db;
+}
+
+/* Background image r */
 .bg-image {
   position: absolute;
   width: 100vw;
@@ -14,22 +40,33 @@
 
 .heading-jogja {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 50vh;
   z-index: -2;
-  --vertical-offset: -0.75em;
+  /* gap: 20px; */
+  /* --vertical-offset: -0.15em; */
 }
 
 .style-jogja {
-  font-size: 10rem;
+  font-size: 900%;
   color: white;
   font-weight: bold;
   text-align: center;
-  transform: translateY(var(--vertical-offset));
+  margin-bottom: 10px;
+  /* transform: translateY(var(--vertical-offset)); */
 }
 
-/* Candi - Penuh layar & geser sedikit ke bawah */
+.slogan {
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  margin-top: -20px;
+  font-weight: lighter;
+}
+
+/* Candi  */
 .candi {
   position: absolute;
   width: 100vw;
@@ -41,10 +78,10 @@
   z-index: -1;
 }
 
-/* Candi kedua - Kanan bawah */
+/* Candi kedua */
 .candi2 {
   position: absolute;
-  width: 100vw;
+  width: 120vw;
   height: 100vh;
   background-image: url(./assets/candi2.png);
   background-position: bottom right;
@@ -56,16 +93,16 @@
   z-index: 0;
 }
 
-/* Tugu - Kiri bawah */
+/* Tugu */
 .tugu {
-  position: fixed; /* Tetap di kiri bawah saat scroll */
-  width: 50em; /* Sesuaikan ukuran */
-  height: 50em;
+  position: fixed;
+  width: 50vw;
+  height: 115vh;
   background-image: url(./assets/tugu.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
   bottom: -25%;
-  left: -10%; /* Tambahkan jarak dari ujung layar */
-  z-index: 1; /* Pastikan elemen terlihat di atas yang lain */
+  left: -10%;
+  z-index: 1;
 }
