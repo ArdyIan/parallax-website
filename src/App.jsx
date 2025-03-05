@@ -5,15 +5,24 @@ import { BioJogja } from "./components/BioJogja/bioJogja";
 function App() {
   return (
     <div className="App">
+      <header>
+        <div className="navigasi">
+          <ul>
+            <li>Sejarah</li>
+            <li>Geografis</li>
+            <li>Wisata</li>
+          </ul>
+        </div>
+      </header>
+
       <Parallax pages={2} style={{ top: "0", left: "0" }} class="animation">
         <ParallaxLayer offset={0} speed={-0.2}>
           <div className="bg-image" id="background-landscape"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.3}>
           <div className="heading-jogja">
-            <h1 className="style-jogja">
-              YOGYAKARTA
-            </h1>
+            <h1 className="style-jogja">YOGYAKARTA</h1>
+            <p className="slogan">"Yogyakarta Berhati Nyaman"</p>
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={-0.4}>
